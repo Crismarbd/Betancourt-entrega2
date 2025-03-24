@@ -10,20 +10,36 @@
     </head>   
 </head>
 <body>
-    
-    <header> 
-        <!-- Etiqueta para img -->
-        <img src="../img/ilustracion-estudio-unas_23-2150854537.avif" alt="Logo de un esmalte de uñas, de distintos colores de rosa">
-        <!-- Etiqueta para el titulo principal -->
-        <h1>Salon de uñas</h1>
-    </header>
-    
+    <!-- Etiqueta para barra de nav -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Mi salon</a>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+            <div class="navbar-menu" id="navbarMenu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/promociones.html">Promociones</a></li>
+                    <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center">Servicios</h1>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbarMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
     <!-- Etiqueta para contenido principal -->
     <main> 
         <!-- Etiqueta para subtitulo -->
         <section>
             <article>
-               <h2>Servicios</h2>
                 <!-- Lista desordenada -->
                 <ul>
                     <li>Manicuria tradicional</li>
@@ -37,29 +53,9 @@
         </section>
         
     </main>
-    
-    <!-- Etiqueta para barra de nav -->
-    <nav>
-    <!-- Lista desordenada -->
-        <ul> 
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>Servicios</li>
-            <li>
-                <a href="promociones.html">Promociones</a>
-            </li>
-            <li>
-                <a href="sobre-nosotros.html">Sobre nosotros</a>
-            </li>
-            <li> 
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-        </nav>
     <!-- Etiqueta para pie de pagina -->
     <footer>
-    <h3>Todos los derechos reservados</h3>
+    <h2>Todos los derechos reservados</h2>
     </footer>
 </body>
 </html>

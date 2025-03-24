@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principal</title>
-    <!-- link de mi css -->
-    <head>
-        <link rel="stylesheet" href="css/main.css">
-    </head>    
+    <link rel="stylesheet" href="../desarrollo-entrega/css/main.css"> 
+    <title>Mi salón</title>
 </head>
 <body>
-
-    <!-- Etiqueta para banner principal -->
-
-    <header> 
-        
-        <!-- Etiqueta para img -->
-        <img src="img/ilustracion-estudio-unas_23-2150854537.avif" alt="Logo de un esmalte de uñas, de distintos colores de rosa">
-        <!-- Etiqueta para barra de nav -->
-        <!-- Etiqueta para titulo principal -->
-        <h1> Salon de uñas </h1>
-        
-    </header>
-
-    <!-- Etiqueta para contenido principal -->
-    <main>
-        <section> 
-            <article>
-                <!-- Etiqueta para parrafos -->
-                <p> Bienvenidos a mi nuevo salon de uñas, donde la creatividad se encuentra con la belleza.</p> 
-            </article>
-        </section>
-    </main>
-    <nav>
-            <!-- Lista desordenada -->
-            <ul> 
-                <li>Home</li>
-                <li>
-                    <a href="pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="pages/promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="pages/sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li> 
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi salón</a>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+            <div class="navbar-menu" id="navbarMenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../desarrollo-entrega/pages/servicios.html">Servicios</a></li>
+                    <li><a href="../desarrollo-entrega/pages/promociones.html">Promociones</a></li>
+                    <li><a href="../desarrollo-entrega/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../desarrollo-entrega/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!-- Etiqueta para pie de pagina -->
+    
+    <div class="container">
+        <h1 class="text-center">Bienvenidos</h1>
+    </div>
+    <h1 class="text-center">Un lugar donde la creatividad se encuentra con la belleza.</h1>
+    <h1>Descubre los colores en tendencia</h1>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbarMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <div class="contenedor">
+        
+        <div class="img1">
+            <img src="../desarrollo-entrega/img/opi 1.webp" alt="Esmalte color rojo">
+            <p>Los esmaltes OPI proporcionan un brillo excepcional que realza la belleza de tus manos, aportando un acabado profesional y pulido a tus uñas.</p>
+        </div>
+        <div class="img2">
+            <img src="../desarrollo-entrega/img/opi 2.webp" alt="Esmalte color celeste">
+            <p>El Sistema OPI Nail Lacquer te garantiza la mejor expresión de color con sus tonos icónicos y de tendencia.</p>
+        </div>
+        <div class="img3">
+            <img src="../desarrollo-entrega/img/opi 3.webp" alt="Esmalte color lila">
+            <p>Alcanza unas uñas de duración de hasta 7 días con un acabado brillante y uniforme.</p>
+        </div>
+        <div class="img4">
+            <img src="../desarrollo-entrega/img/opi 4.webp" alt="Esmalte color rosa">
+        </div>
+    </div>
     <footer>
-        <!-- Etiqueta para el video -->
+        <!- Etiqueta para el video ->
         <section>
-            <h2>Video de presentación del producto</h2>
+            <h1>Presentación del producto</h1>
             <video controls width="400">
                 <source src="videos/Manicure Básica ft. OPI Infinite Shine  _ DBS Beauty Store.mp4" type="video/mp4">
-                Tu navegador no soporta el video.
             </video>
+            <h2>Todos los derechos reservados</h2>    
         </section>
-        <h3>Todos los derechos reservados</h3>
     </footer>
 </body>
 </html>
