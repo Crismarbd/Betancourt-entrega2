@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de mi css -->
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <title>Sobre OPI</title>
+    </head>   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Belle Rose</a>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        </div>    
+        <div class="navbar-menu" id="navbarMenu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/sobre.html">OPI</a></li>
+                <li><a href="../pages/colecciones.html">Colecciones</a></li>
+                <li><a href="../pages/ideas.html">Ideas</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul> 
+        </div>
+    </nav>
+    <div class="seccion-titulo">
+        <hr class="linea-horizontal">
+        <h1 class="text-center">Sobre OPI</h1>
+    </div>
+
+<header>
+    <main>
+       <!-- Breve descripcion -->
+    <div class="descripcion">
+        <p>OPI es una marca pensada especialmente para manicuristas y técnicos en uñas que buscan productos de alto rendimiento y resultados profesionales. 
+        Perfecta para quienes disfrutan de cuidar sus manos, probar colores nuevos, diseños originales y seguir las últimas tendencias en uñas. 
+        Gracias a su durabilidad y fácil aplicación, es ideal para quienes tienen poco tiempo pero quieren mantener un look cuidado y prolijo.
+        </p>
+    </div> 
+    <div class="descripcion-ns">
+        <p>
+          Con líneas como Nature Strong, OPI también apunta a quienes prefieren productos veganos, cruelty free y con ingredientes más naturales.
+          Orientada a personas con sensibilidad a químicos fuertes y a quienes buscan una manicura con impacto mínimo en el medio ambiente.  
+        </p>
+        
+        <div class="contenedor-ns">
+          <div class="img-ns">
+            <img src="../img/opi-ns1.webp" alt="Muestra de color nature strong">
+          </div>
+          <div class="img-ns">
+            <img src="../img/opi-ns2.webp" alt="Color verde esmeralda"> 
+          </div>
+        </div>
+    </div>
+    <div class="descripcion-inicios">
+        <p>
+            La cofundadora Suzi Weiss-Fischmann, se unió a la compañía cuando aún era una distribuidora de productos dentales. 
+            Junto a George Schaeffer (el fundador), transformaron la empresa en una marca de cosmética especializada en uñas.
+            Suzi fue la mente maestra detrás de los nombres creativos y memorables de los esmaltes de OPI, como “I’m Not Really a Waitress”, “Lincoln Park After Dark” o “Cajun Shrimp”.
+            Suzi no solo ayudó a que OPI se convirtiera en una marca global, sino que además abrió el camino para muchas mujeres en el mundo de la belleza y los negocios.
+        </p>
+    </div>
+    </main>
+    
+    
+</header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbarMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <!-- Etiqueta para pie de pagina -->
+    <footer>
+    <h2>Todos los derechos reservados</h2>
+    </footer>
+</body>
+</html>

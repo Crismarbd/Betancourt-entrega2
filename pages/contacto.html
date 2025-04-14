@@ -6,50 +6,46 @@
     <title>Contacto</title>
     <!-- link de mi css -->
     <head>
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../style.css">
     </head>   
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Mi salón</a>
+            <a class="navbar-brand" href="../index.html">Belle Rose</a>
             <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
-            <div class="navbar-menu" id="navbarMenu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/promociones.html">Promociones</a></li>
-                    <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+        </div>    
+        <div class="navbar-menu" id="navbarMenu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/sobre.html">OPI</a></li>
+                <li><a href="../pages/colecciones.html">Colecciones</a></li>
+                <li><a href="../pages/ideas.html">Ideas</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul> 
         </div>
     </nav>
+    <header>
+        <div class="seccion-contacto">
+            <hr class="linea-horizontal-contacto">
+            <h1 class="text-center">Contactanos</h1>
+        </div> 
+    </header>
+    <main>
+        <div class="contacto-mail">
+            <h2>Para consultas o comentarios:</h2> 
+            <p>Póngase en contacto bellerose@gmail.com</p>
+        </div>
+    </main>
     <script>
         function toggleMenu() {
             const menu = document.getElementById('navbarMenu');
             menu.classList.toggle('active');
         }
     </script>
-    <header> 
-         <!-- Etiqueta para titulo -->
-        <h1>Contacto</h1>
-        
-    </header>
-    <!-- Etiqueta para el contenido principal -->
-    <main>
-        <!-- Etiqueta para subtitulo -->
-        <section>
-            <article>
-                <!-- Etiqueta para parrafos -->
-                <p>Nos encontramos en la calle x, en la ciudad de x.Puedes contactarnos mediante el numero de (xx) xxx-xxxx.</p> 
-            </article>
-        </section>
-        
-    </main>
         <!-- Etiqueta para pie de pagina -->
     <footer>
-        <h2>Todos los derechos reservados</h2>
+        <h3>Todos los derechos reservados</h3>
     </footer>
 </body>
 </html>

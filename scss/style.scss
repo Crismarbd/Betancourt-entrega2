@@ -1,0 +1,1096 @@
+@use 'variables';
+@use 'mixins';
+@use 'sass:color';
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  @include mixins.fuente-pagina;
+}
+
+@font-face {
+  font-family: 'roseblue';
+  src: url('../css/_roseblue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'belle';
+  src: url('../css/BodoniModa-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  @include mixins.centrar;
+  padding: 0;
+  position: relative;
+  margin-bottom: 0;
+}
+
+section h1 {
+  font-family: 'roseblue';
+  font-size: variables.$subtitle;
+  color: variables.$secondary-color;
+}
+
+header .box {
+  display: grid;
+  width: 100%;         /* Ajusta el ancho al 100% del ancho de la pantalla */
+  height: auto;       /* Ajusta la altura al 100% de la altura de la pantalla */
+  background-color: variables.$rosa;
+  color: white;        
+  gap: 1rem;
+}
+
+header h1 {
+  @include mixins.centrar;
+  padding: 0;
+  position: relative;
+  font-family: 'roseblue';
+  font-size: variables.$titulo-grande;
+}
+
+.box-parrafo {
+  padding: 0;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: variables.$parrafo;
+  width: 100%;
+  text-align: center;
+}
+
+.contenido-p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  > p {
+    font-size: variables.$subtitle;
+  }
+}
+
+
+.imagenes-p p{
+  font-size: variables.$parrafo;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.imagenes-c {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+.imagen-c {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  
+}
+
+.imagen-c img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    transition: all 0.3s ease;
+}
+
+.imagen-c a:hover img {
+    filter: brightness(0.7);
+}
+
+.btn-click {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.imagen-c a:hover .btn-click{
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+&:hover .btn-click{
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+}
+
+.imagenes-s {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-s {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+}
+
+.imagen-s img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  transition: all 0.3s ease;
+}
+
+.imagen-s a:hover img {
+  filter: brightness(0.7);
+}
+
+.btn-click {
+position: absolute;
+bottom: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+background-color: rgba(0, 0, 0, 0.7);
+padding: 10px 20px;
+color: white;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+pointer-events: none;
+}
+
+.imagen-s a:hover .btn-click{
+opacity: 1;
+transform: translate(-50%, -50%);
+pointer-events: auto;
+}
+
+&:hover .btn-click{
+opacity: 1;
+transform: translate(-50%, -50%);
+pointer-events: auto;
+}
+}
+
+.imagenes-t {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-t {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+}
+
+.imagen-t img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  transition: all 0.3s ease;
+}
+
+.imagen-t a:hover img {
+  filter: brightness(0.7);
+}
+
+.btn-click {
+position: absolute;
+bottom: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+background-color: rgba(0, 0, 0, 0.7);
+padding: 10px 20px;
+color: white;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+pointer-events: none;
+}
+
+.imagen-t a:hover .btn-click{
+opacity: 1;
+transform: translate(-50%, -50%);
+pointer-events: auto;
+}
+
+&:hover .btn-click{
+opacity: 1;
+transform: translate(-50%, -50%);
+pointer-events: auto;
+}
+}
+
+.box2 {
+  display: grid;
+  width: 90%;        
+  height: auto;
+  background-color: variables.$rosa;
+  color: white;        
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 100%;
+
+  h1{
+   font-family: 'roseblue';
+   font-size: variables.$titulo-nav; 
+  }
+}
+
+.btn-ideas {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-click {
+  display: inline-block;
+  background-color: darken(variables.$rosa, 10%); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: variables.$parrafo;
+  transition: background-color 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    background-color: #fab4b8;
+  }
+}
+
+.coleccion p {
+  text-align: center;
+  font-size: variables.$subtitle;
+  font-family: 'roseblue';
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+.navbar-brand {
+    font-family: 'belle';
+    font-size: variables.$subtitle;
+    color: variables.$rosa;
+    text-decoration: none;
+    margin-right: 2rem;
+    white-space: nowrap;
+  }
+
+.navbar-toggler {
+    font-size: variables.$parrafo;
+    background: none;
+    border: none;
+    color: variables.$secondary-color;
+    cursor: pointer;
+    display: none; // Oculto por defecto (en pantallas grandes)
+  }
+
+.navbar {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  
+  }
+
+.navbar-menu {
+    font-family: 'roseblue';
+    display: flex; 
+    align-items: center; 
+    ul {
+      display: flex;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      justify-content: space-evenly;
+
+      li {
+        display: flex;
+        align-items: center;
+    
+        a {
+          display: flex;
+          justify-content: space-around;
+          color: variables.$primary-color;
+          text-decoration: none;
+          font-size: variables.$parrafo;
+          line-height: 1;
+          padding: 10px;
+        }
+      }
+
+    &.active {
+      display: flex; // Asegura que se muestre como flex cuando está activo
+      flex-direction: column; // Cambia a columna para el menú vertical
+      position: relative;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      align-items: flex-start; // Alinea los items a la izquierda
+      padding: 1rem;
+      z-index: 10; // Asegura que esté por encima de otros elementos
+
+      ul {
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%; // Ocupa todo el ancho del menú desplegable
+        li {
+          padding: 0.5rem 0;
+          a {
+            font-size: variables.$parrafo;
+            display: block; // Para que el enlace ocupe todo el ancho del li
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  img {
+    width: 90vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
+    object-fit: cover;
+    padding: 20px;
+  }
+
+  h1 {
+    font-family: 'roseblue';
+    text-align: center;
+    margin: 10px;
+    color: variables.$secondary-color;
+  }
+
+  p {
+    font-family: variables.$font-primary;
+    color: variables.$secondary-color;
+  }
+}
+
+// Apartado para OPI
+
+.seccion-titulo{
+  padding: 0;
+
+  .linea-horizontal {
+  width: 50%;
+  height: 2px;
+  background-color: variables.$primary-color;
+  border: none;
+  }
+
+  h1{
+    font-family: 'belle';
+    font-size: variables.$titulo-nav;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+}
+
+.descripcion p {
+  font-size: variables.$parrafo;
+  font-family: 'roseblue';
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.descripcion-ns p {
+  font-size: variables.$parrafo;
+  font-family: 'roseblue';
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.contenedor-ns {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.img-ns {
+  width: 300px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.descripcion-inicios p {
+  font-size: variables.$parrafo;
+  font-family: 'roseblue';
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+}
+
+// Apartado para Colecciones
+
+.seccion-coleccion{
+  padding: 0;
+  
+
+  .linea-horizontal-coleccion {
+    width: 50%;
+    height: 2px;
+    background-color: variables.$primary-color;
+    border: none;
+  }
+
+   h1{
+    font-family: 'belle';
+    font-size: variables.$titulo-nav;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 0;
+    text-align: left;
+    padding: 0 1rem;
+  }
+}
+
+.zodiac {
+  display: grid;
+  width: 1200px;        
+  height: auto;
+  color: variables.$primary-color;
+  gap: 0;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+
+  h2 {
+    font-family: 'roseblue';
+    font-size: variables.$subtitle; 
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.imagenes-bz {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-bz {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+  }
+}
+
+.imagenes-bzs {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-bzs {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+  }
+}
+
+.zodiac-semi {
+  display: grid;
+  width: 1200px;        
+  height: auto;
+  color: variables.$primary-color;
+  gap: 0;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+
+  h2 {
+    font-family: 'roseblue';
+    font-size: variables.$subtitle; 
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.imagenes-barbie {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-barbie {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+  }
+}
+
+.barbie {
+  display: grid;
+  width: 1200px;        
+  height: auto;
+  color: variables.$primary-color;
+  gap: 0;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+
+  h2 {
+    font-family: 'roseblue';
+    font-size: variables.$subtitle; 
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.imagenes-xbox {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-xbox {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+
+  }
+}
+.xbox {
+  display: grid;
+  width: 1200px;        
+  height: auto;
+  color: variables.$primary-color;
+  gap: 0;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+
+  h2 {
+    font-family: 'roseblue';
+    font-size: variables.$subtitle; 
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// Apartado para contacto
+
+.contacto-mail {
+  h2 {
+    font-family: 'belle';
+    font-size: variables.$subtitle;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  p {
+    font-family: 'belle';
+    font-size: variables.$parrafo;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+}
+
+.seccion-contacto {
+  padding: 0;
+
+  .linea-horizontal-contacto {
+  width: 48vw;
+  height: 2px;
+  background-color: variables.$primary-color;
+  border: none;
+  }
+
+  h1 {
+    font-family: 'belle';
+    font-size: variables.$titulo-nav;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+}
+
+// Apartado para Ideas
+
+.seccion-ideas{
+  padding: 0;
+
+  .linea-horizontal-ideas {
+  width: 49vw;
+  height: 2px;
+  background-color: variables.$primary-color;
+  border: none;
+  }
+
+  h1{
+    font-family: 'belle';
+    font-size: variables.$titulo-nav;
+    color: variables.$primary-color;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+}
+
+.imagenes-ideas {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.imagen-ideas {
+position: relative;
+width: 200px;
+overflow: hidden;
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  }
+}
+
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+// Medias
+
+@media (max-width: 768px) {
+  header .box,
+  .box2 {
+    padding: 0;
+    gap: 0;
+  }
+
+  section h1,
+  .coleccion p {
+    font-size: variables.$parrafo; 
+    text-align: center;
+  }
+
+  .box h1{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .box p {
+    display: none;
+  }
+
+  .contenido-p p{
+    font-size: 25px;
+  }
+
+  .imagen-c,
+  .imagen-s,
+  .imagen-t {
+    width: 100%; 
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none; 
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar{
+    flex-direction: column;
+  }
+
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-toggler {
+    display: block; /* visible en mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-menu.active {
+    display: flex; /* aparece cuando hacés click */
+  }
+  
+  .navbar-menu ul {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  .navbar-menu li {
+    width: 100%;
+  }
+  
+  .navbar-menu a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .box h1{
+    font-size: variables.$subtitle;
+  }
+
+  .box2 h1 {
+    font-size: variables.$subtitle;
+  }
+
+  .contenedor {
+    img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .btn-click {
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .descripcion-inicios{
+    margin: 15px;
+  }
+
+  .text-center {
+    display: none;
+  }
+
+  .imagenes-bz {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-bz {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .imagenes-bzs {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-bzs {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .imagenes-barbie {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-barbie {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .imagenes-xbox {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-xbox {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .seccion-coleccion .linea-horizontal-coleccion{
+    width: 14%;
+  }
+
+  .zodiac h2 {
+    font-size: 25px;
+  }
+
+  .zodiac-semi h2 {
+    font-size: 25px;
+  }
+
+  .barbie h2 {
+    font-size: 25px;
+  }
+
+  .seccion-ideas h1 {
+    font-size: 25px;
+  }
+
+  .imagenes-ideas {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-ideas {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}  
+
+@media (max-width: 1280px) {
+  .imagenes-c {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-c {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .imagenes-s {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-s {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .imagenes-t {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+    
+  .imagen-t {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .descripcion-inicios{
+    margin: 15px;
+  }
+
+  .seccion-coleccion h1 {
+    display: none;
+  }
+
+  .seccion-coleccion .linea-horizontal-coleccion{
+    width: 30%;
+  }
+}
+

@@ -1,0 +1,29 @@
+// _mixins.scss
+
+@mixin centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin responsive-text($size-sm, $size-md) {
+    font-size: $size-sm;
+  
+    @media (min-width: $breakpoint-sm) {
+      font-size: $size-md;
+    }
+  }
+  
+  @mixin responsive-container($width-sm, $width-md) {
+    width: $width-sm;
+  
+    @media (min-width: $breakpoint-sm) {
+      width: $width-md;
+    }
+  }
+  @mixin fuente-pagina {
+    font-family: 'Roseblue', sans-serif;
+    color: #343a40;
+  }
+
+      
