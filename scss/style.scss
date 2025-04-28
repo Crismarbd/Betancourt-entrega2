@@ -316,6 +316,10 @@ pointer-events: auto;
     gap: 2rem;
   }
 
+.container img {
+  width: 100px;
+}
+
 .navbar-brand {
     font-family: 'belle';
     font-size: variables.$subtitle;
@@ -447,6 +451,7 @@ pointer-events: auto;
     color: variables.$primary-color;
     margin-top: 25px;
     margin-left: 15px;
+    text-align: center;
   }
 }
 
@@ -456,16 +461,17 @@ pointer-events: auto;
   position: relative;
   text-align: left;
   margin-top: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .descripcion-ns p {
   font-size: variables.$parrafo;
   font-family: 'roseblue';
   position: relative;
-  text-align: left;
-  margin-top: 10px;
-  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .contenedor-ns {
@@ -474,6 +480,9 @@ pointer-events: auto;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
+  margin-top: 10px;
+  margin-left: 15px;
+  text-align: center;
 }
 
 .img-ns {
@@ -491,8 +500,9 @@ pointer-events: auto;
   font-size: variables.$parrafo;
   font-family: 'roseblue';
   position: relative;
-  text-align: left;
-  margin-top: 10px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 // Apartado para Colecciones
@@ -514,7 +524,7 @@ pointer-events: auto;
     color: variables.$primary-color;
     margin-top: 25px;
     margin-left: 0;
-    text-align: left;
+    text-align: center;
     padding: 0 1rem;
   }
 }
@@ -672,6 +682,12 @@ img {
 
 // Apartado para contacto
 
+.contacto-mail1 {
+  display: flex;            // Alinea los hijos uno al lado del otro
+  align-items: center;       // Centra verticalmente texto e imagen
+  gap: 350px;                 // Espacio entre texto e imagen
+}
+
 .contacto-mail {
   h2 {
     font-family: 'belle';
@@ -689,6 +705,12 @@ img {
     margin-left: 15px;
   }
 }
+
+.contacto-mail1 img {
+  width: 30%;         // Solo el tamaño de la imagen
+  height: auto;       // Mantiene proporción
+}
+
 
 .seccion-contacto {
   padding: 0;
@@ -725,8 +747,9 @@ img {
     font-family: 'belle';
     font-size: variables.$titulo-nav;
     color: variables.$primary-color;
-    margin-top: 25px;
-    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
   }
 }
 
@@ -752,7 +775,7 @@ img {
 footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 // Medias
@@ -874,7 +897,7 @@ footer {
     padding: 5px;
     margin-bottom: 10px;
   }
-
+  // Sobre opi
   .descripcion-inicios{
     margin: 15px;
   }
@@ -882,7 +905,10 @@ footer {
   .text-center {
     display: none;
   }
-
+  // Colecciones
+  .linea-horizontal-coleccion{
+    display: none;
+  }
   .imagenes-bz {
     overflow: hidden;
     margin: 0;
@@ -986,7 +1012,7 @@ footer {
   .barbie h2 {
     font-size: 25px;
   }
-
+  //ideas
   .seccion-ideas h1 {
     font-size: 25px;
   }
